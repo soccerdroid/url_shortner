@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-1ihw-k+^h1(*jy^zy-2=^9pcqc-rf-!)x03v=u$b)2k%pled3_
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+HOSTNAME = 'ubly.com'
 
 # Application definition
 

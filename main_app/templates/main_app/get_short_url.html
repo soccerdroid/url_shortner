@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>URL Shortner App</title>
+    </head>
+    <body>
+        <p>Please provide your email and the url you want to shorten:</p>
+        <div>
+            <form method="POST" action="/shortenurl/" class="post-form">
+                {% csrf_token %}
+                <label for="email">Your email: </label>
+                <input id="email" type="text" name="email">
+                <label for="complete_url">URL: </label>
+                <input id="complete_url" type="text" name="complete_url">
+                <button type="submit" class="save btn btn-default">Get shortened URL</button>
+            </form>
+        </div>
+    </body>
+</html>
