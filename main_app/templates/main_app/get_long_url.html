@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>URL Shortner App</title>
+    </head>
+    <body>
+        <p>Please provide the short URL:</p>
+        <div>
+            <form method="POST" action="/longurl/" class="post-form">
+                {% csrf_token %}
+                <label for="short_url">Short URL: </label>
+                <input id="short_url" type="text" name="short_url">
+                <button type="submit" class="save btn btn-default">Get original URL</button>
+            </form>
+        </div>
+    </body>
+</html>
